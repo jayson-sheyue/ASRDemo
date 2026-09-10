@@ -17,6 +17,7 @@ def test_home_and_static(client):
     assert '本页场景样例' in js.text
     assert 'StreamingRecognize' in js.text
     assert '实时听写' in js.text
+    assert 'cellHtml' in js.text
 
 
 def test_catalog_and_docs(client):
@@ -45,6 +46,10 @@ def test_catalog_and_docs(client):
     assert any(item['id'] == 'phone-stereo' and item['config'].get('channels') for item in samples)
     assert any(item['id'] == 'phone-quad' for item in samples)
     assert catalog.get('feature_value') and catalog['feature_value'][0][1] == '业务上值什么'
+    assert catalog['api_out_of_demo'][0][1] == '业务价值'
+    assert any('BatchRecognize' in row[0] for row in catalog['api_out_of_demo'])
+    assert not any('Gemini' in row[0] for row in catalog['api_out_of_demo'][1:])
+    assert not any('分轨' in row[0] or '多通道' in row[0] for row in catalog['api_out_of_demo'][1:])
     for name in ('readme', 'guide', 'sources'):
         body = client.get(f'/api/doc/{name}').json()['text']
         assert 'Speech-to-Text' in body or 'Chirp 3' in body

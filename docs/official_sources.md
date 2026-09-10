@@ -22,8 +22,10 @@
 | [V1 模型对照](https://docs.cloud.google.com/speech-to-text/docs/v1/transcription-model) | latest_long / latest_short / telephony / medical_* |
 | [医学模型](https://docs.cloud.google.com/speech-to-text/docs/v1/medical-models) | 仅 en-US。不要拿中文病历试这一页 |
 | [流式识别](https://cloud.google.com/speech-to-text/docs/streaming-recognize) | StreamingRecognize 概念 |
-| [批量识别](https://cloud.google.com/speech-to-text/docs/batch-recognize) | 长音频与 GCS |
-| [Speech adaptation](https://cloud.google.com/speech-to-text/docs/adaptation) | 短语提示。Chirp 不支持 class token |
+| [批量识别](https://cloud.google.com/speech-to-text/docs/batch-recognize) | 长音频与 GCS。工作台不做，见 batch_demo.py |
+| [Speech adaptation](https://cloud.google.com/speech-to-text/docs/adaptation) | 短语提示。Chirp 不支持 class token。工作台用请求内联 |
+| [V2 Recognizer 资源](https://cloud.google.com/speech-to-text/v2/docs/reference/rest/v2/projects.locations.recognizers) | 长期识别器。本 Demo 用隐式 `_` |
+| [自定义语音模型](https://cloud.google.com/speech-to-text/v2/docs/custom-speech-models/overview) | Custom Speech 训练。本 Demo 不训练 |
 | [多声道识别（V2）](https://docs.cloud.google.com/speech-to-text/docs/multi-channel) | 默认只转第一轨。WAV/FLAC/OGG：1–8 轨 |
 | [多声道识别（V1）](https://docs.cloud.google.com/speech-to-text/docs/v1/multi-channel) | LINEAR16/FLAC/OGG：1–8 轨。MULAW/AMR 只能 1 轨。按轨计费 |
 | [多语言识别](https://cloud.google.com/speech-to-text/v2/docs/multiple-languages) | latest_long / short / telephony 最多 3 个。Chirp 3 实测同一请求只能 2 个 |
@@ -49,5 +51,3 @@
 | --- | --- |
 | [Gemini 音频理解](https://ai.google.dev/gemini-api/docs/audio) | 生成式模型听音频，不是 Chirp ASR |
 | [Gemini Live API](https://ai.google.dev/gemini-api/docs/live-api) | 实时对话与打断 |
-| [自定义语音模型](https://cloud.google.com/speech-to-text/v2/docs/custom-speech-models/overview) | 训练自定义模型。本 Demo 不训练 |
-| [V2 Recognizer 资源](https://cloud.google.com/speech-to-text/v2/docs/reference/rest/v2/projects.locations.recognizers) | 长期识别器。本 Demo 用 `_` |

@@ -19,6 +19,8 @@ REQUIRED_URLS = [
     'https://cloud.google.com/speech-to-text/v2/docs/multiple-languages',
     'https://docs.cloud.google.com/speech-to-text/docs/v1/speech-to-text-supported-languages',
     'https://cloud.google.com/speech-to-text/pricing',
+    'https://cloud.google.com/speech-to-text/v2/docs/custom-speech-models/overview',
+    'https://cloud.google.com/speech-to-text/v2/docs/reference/rest/v2/projects.locations.recognizers',
     'https://ai.google.dev/gemini-api/docs/live-api',
 ]
 
@@ -44,6 +46,7 @@ def test_learning_guide_covers_can_and_cannot():
         'language_codes', '说话人分离', 'class token', '声纹',
         'us-central1', 'cmn-Hans-CN', 'en-US', '医学模型',
         '分轨', 'channel_tag', '8 轨', '多语切换', '主导', '最多 2',
+        '网页 Demo 故意没接', '业务价值',
     ):
         assert needle in text
     readme = (Path(__file__).resolve().parents[1] / 'README.md').read_text(encoding='utf-8')

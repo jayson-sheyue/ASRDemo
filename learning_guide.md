@@ -98,7 +98,9 @@ Google 把「怎么把声音送过去」分成三条路。名字看起来像编�
 
 **代价：** 要先有云存储；工作台这种「本地选个文件立刻出字」的教学界面不走这条。本 Demo **不会**在你点转写时偷偷提交批量任务。
 
-官方接口名：`BatchRecognize`（V2）。V1 里类似的叫长时间识别（long running）。
+官方接口名：`BatchRecognize`（V2）。V1 里类似的叫长时间识别（long running）。接入文档：[批量识别](https://cloud.google.com/speech-to-text/docs/batch-recognize)。
+
+工作台「本产品还有、网页 Demo 故意没接」只列 **Speech-to-Text 自己有、但网页当场做不了** 的能力：长期 Recognizer / PhraseSet 资源、Custom Speech 训练、以及上面的 BatchRecognize。分轨识别已经在工作台。Gemini 音频理解和 Live 对话是别的产品，不要写进这张表。
 
 ### 对照记一张表
 

@@ -128,8 +128,11 @@ function renderSamples(){
 function htmlTable(rows){
   if(!rows||!rows.length) return '';
   const head=rows[0].map(cell=>`<th>${escapeHtml(String(cell))}</th>`).join('');
-  const body=rows.slice(1).map(row=>'<tr>'+row.map(cell=>`<td>${escapeHtml(String(cell))}</td>`).join('')+'</tr>').join('');
+  const body=rows.slice(1).map(row=>'<tr>'+row.map(cell=>`<td>${cellHtml(cell)}</td>`).join('')+'</tr>').join('');
   return `<div class="compare-wrap"><table><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table></div>`;
+}
+function cellHtml(value){
+  return String(value).split(/(https:\/\/[^\s]+)/).map((part,i)=>i%2?`<a href="${escapeHtml(part)}" target="_blank" rel="noopener noreferrer">${escapeHtml(part)}</a>`:escapeHtml(part).replace(/\n/g,'<br>')).join('');
 }
 function capabilities(){
   const spec=workspace(active);

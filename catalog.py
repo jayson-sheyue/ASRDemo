@@ -181,14 +181,25 @@ FEATURE_HINTS = {
 }
 
 API_OUT_OF_DEMO = [
-    ['能力', '官方位置', '本 Demo'],
-    ['创建长期 Recognizer 资源', 'V2 recognizers.create', '一律用隐式 recognizers/_，不落资源'],
-    ['自定义语音模型训练', 'Custom Speech / latest_long 微调', '不训练'],
-    ['BatchRecognize 写回 GCS', 'V2 BatchRecognize + GcsOutputConfig', '命令行 batch_demo.py；工作台不提交'],
-    ['多通道分别识别', 'V2 multi_channel_mode / V1 enable_separate_recognition_per_channel', '工作台「分轨识别」。WAV/FLAC/OGG：1–8 轨。MULAW/AMR：只能 1 轨。按轨计费。latest_short 不能开'],
-    ['V1 增强模型 enhanced', 'use_enhanced + model', 'V1 页用 latest_* 名称，不单独开 enhanced 开关'],
-    ['独立语言识别 API', 'Speech-to-Text language ID', 'Chirp 的 auto 不是这个产品'],
-    ['Gemini 音频理解 / Live API', 'Gemini audio / Live API', '那是生成式模型，不是本页 Chirp ASR'],
+    ['能力', '业务价值', '为什么网页 Demo 不做', '客户接入文档'],
+    [
+        '长期 Recognizer / PhraseSet 资源',
+        '呼叫中心把模型、语言、提示短语做成可复用配置，多条线路共用，不必每次请求带齐字段',
+        '会在你们 GCP 项目里留下资源。教学一律用隐式 recognizers/_，短语用请求内联（工作台「短语提示」已覆盖效果）。',
+        'V2 Recognizer\nhttps://cloud.google.com/speech-to-text/v2/docs/reference/rest/v2/projects.locations.recognizers',
+    ],
+    [
+        '自定义语音模型训练（Custom Speech）',
+        '领域口音、产品黑话、内部代号特别多时，用自有语料把识别率拉上去',
+        '要准备标注数据并启动训练任务，网页当场点不了。短语提示解决不了系统性口音。',
+        'Custom Speech\nhttps://cloud.google.com/speech-to-text/v2/docs/custom-speech-models/overview',
+    ],
+    [
+        'BatchRecognize 写回 GCS',
+        '一小时会、全天通话、会后出纪要；Chirp 3 说话人分离官方也更走批量',
+        '要云存储和异步任务。工作台是本地文件立刻出字。命令行见 batch_demo.py。',
+        '批量识别\nhttps://cloud.google.com/speech-to-text/docs/batch-recognize',
+    ],
 ]
 
 MODEL_RULES = [

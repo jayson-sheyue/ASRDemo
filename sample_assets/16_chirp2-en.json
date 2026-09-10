@@ -1,0 +1,14 @@
+{
+  "id": "chirp2-en",
+  "title": "对照 · 同一句英语",
+  "group": "对照 Chirp 3",
+  "note": "和 Chirp 3 英语样例同一条音频，只换模型。",
+  "engine": "chirp2",
+  "audio": "welcome_en.wav",
+  "expected": "Hello, welcome to the listening lab. Cloud Speech to Text turns your voice into readable text.",
+  "config": {
+    "model": "chirp_2",
+    "language": "en-US",
+    "punctuation": true
+  }
+}

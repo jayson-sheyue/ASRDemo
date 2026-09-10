@@ -1,0 +1,15 @@
+{
+  "id": "chirp2-translate",
+  "title": "独有 · 语音翻译",
+  "group": "独有能力",
+  "note": "源音频是英语。目标码必须是 cmn-Hans-CN，不是 zh-CN。区域是 us-central1，不是 Chirp 3 的 us。",
+  "engine": "chirp2",
+  "audio": "welcome_en.wav",
+  "expected": "你好，欢迎来到听写实验室。Cloud Speech to Text 把你的声音变成可以阅读的文字。",
+  "config": {
+    "model": "chirp_2",
+    "language": "en-US",
+    "punctuation": true,
+    "translation_target": "cmn-Hans-CN"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "phone-chirp",
+  "title": "电话 · chirp_telephony",
+  "group": "为什么选电话模型",
+  "note": "chirp_telephony 把 Chirp 用到 8 kHz 电话。区域必须是 us-central1。官方只有约 10 个语言，这条是 en-US。",
+  "engine": "telephony",
+  "audio": "phone_en.wav",
+  "expected": "Thanks for calling. Your confirmation code is A three K nine. Press one for an agent.",
+  "config": {
+    "model": "chirp_telephony",
+    "language": "en-US",
+    "punctuation": true,
+    "adaptation": "A3K9"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "adaptation",
+  "title": "功能 · 专有名词",
+  "group": "功能怎么测",
+  "note": "不给提示时，webeye-internal-test 和 Speech-to-Text 容易写错。提示短语会进 adaptation。",
+  "engine": "chirp3",
+  "audio": "names_cmn.wav",
+  "expected": "请帮我预约明天下午三点，在 Vertex 项目 webeye-internal-test 里启用 Speech to Text API。",
+  "config": {
+    "model": "chirp_3",
+    "language": "cmn-Hans-CN",
+    "punctuation": true,
+    "adaptation": "webeye-internal-test, Speech-to-Text, Vertex, Speech to Text API"
+  }
+}

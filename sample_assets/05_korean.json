@@ -1,0 +1,14 @@
+{
+  "id": "korean",
+  "title": "多语言 · 한국어",
+  "group": "多语言",
+  "note": "ko-KR。",
+  "engine": "chirp3",
+  "audio": "welcome_ko.wav",
+  "expected": "안녕하세요. 음성 인식 실험실에 오신 것을 환영합니다.",
+  "config": {
+    "model": "chirp_3",
+    "language": "ko-KR",
+    "punctuation": true
+  }
+}

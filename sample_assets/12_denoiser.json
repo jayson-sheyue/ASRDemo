@@ -1,0 +1,15 @@
+{
+  "id": "denoiser",
+  "title": "功能 · 降噪",
+  "group": "功能怎么测",
+  "note": "干净样例上几乎听不出差别。有价值的是请求里带了 denoiser_config。",
+  "engine": "chirp3",
+  "audio": "welcome_cmn.wav",
+  "expected": "你好，欢迎来到听写实验室。把声音交给 Google Cloud，让它变成可以阅读的文字。",
+  "config": {
+    "model": "chirp_3",
+    "language": "cmn-Hans-CN",
+    "punctuation": true,
+    "denoiser": true
+  }
+}

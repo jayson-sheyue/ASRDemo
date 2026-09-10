@@ -1,0 +1,15 @@
+{
+  "id": "polyglot-list",
+  "title": "功能 · 多语切换 · 列预期 locale",
+  "group": "功能怎么测",
+  "note": "同一段中日英德音频。Chirp 3 列预期 locale 最多 2 个（官方示例 [\"en-US\",\"fr-FR\"]），所以请求只列 cmn-Hans-CN, ja-JP。发 3 个会 400。英、德仍在录音里。更多语种请用 auto。",
+  "engine": "chirp3",
+  "audio": "polyglot_cmn_ja_en_de.wav",
+  "expected": "大家好，欢迎参加今天的产品发布会。本日はお越しいただきありがとうございます。Hello everyone, thank you for joining this product launch. Guten Tag, willkommen zur Produkteinführung.",
+  "config": {
+    "model": "chirp_3",
+    "language": "cmn-Hans-CN",
+    "languages": "ja-JP",
+    "punctuation": true
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "medical-talk",
+  "title": "医学 · 对话",
+  "group": "专用模型",
+  "note": "英语医患对话，同样只支持 en-US。两段英语拼接，不是真人问诊。中文病历请回 Chirp 3。",
+  "engine": "medical",
+  "audio": "medical_conversation.wav",
+  "expected": "How long have you had the chest pain? It started last night after dinner, and it is worse when I breathe in.",
+  "config": {
+    "model": "medical_conversation",
+    "language": "en-US",
+    "punctuation": true
+  }
+}

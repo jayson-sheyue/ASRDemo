@@ -1,0 +1,14 @@
+{
+  "id": "lecture",
+  "title": "业务 · 讲解",
+  "group": "业务选型",
+  "note": "会议/讲解用 Chirp 3，不要用 telephony。",
+  "engine": "chirp3",
+  "audio": "lecture_cmn.wav",
+  "expected": "语音识别不是把声音变成人，它只是把已经说出来的话写成字。模型会猜，专有名词要靠短语提示。",
+  "config": {
+    "model": "chirp_3",
+    "language": "cmn-Hans-CN",
+    "punctuation": true
+  }
+}

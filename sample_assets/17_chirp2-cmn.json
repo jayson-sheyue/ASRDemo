@@ -1,0 +1,14 @@
+{
+  "id": "chirp2-cmn",
+  "title": "对照 · 同一句中文",
+  "group": "对照 Chirp 3",
+  "note": "同一条普通话。先听差别，再谈要不要升级 Chirp 3。",
+  "engine": "chirp2",
+  "audio": "welcome_cmn.wav",
+  "expected": "你好，欢迎来到听写实验室。把声音交给 Google Cloud，让它变成可以阅读的文字。",
+  "config": {
+    "model": "chirp_2",
+    "language": "cmn-Hans-CN",
+    "punctuation": true
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "cantonese",
+  "title": "多语言 · 粤语 Preview",
+  "group": "多语言",
+  "note": "yue-Hant-HK 在 Chirp 3 语言表是 Preview。失败不代表普通话坏了。",
+  "engine": "chirp3",
+  "audio": "welcome_yue.wav",
+  "expected": "你好，歡迎嚟到聽寫實驗室。",
+  "config": {
+    "model": "chirp_3",
+    "language": "yue-Hant-HK",
+    "punctuation": true
+  }
+}

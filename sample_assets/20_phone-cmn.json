@@ -1,0 +1,15 @@
+{
+  "id": "phone-cmn",
+  "title": "对照 · 8 kHz 中文请用 Chirp 3",
+  "group": "为什么不选电话模型",
+  "note": "这是 8 kHz 中文客服音色，但官方 telephony 语言表没有普通话。所以这一条放在 Chirp 3，不放在 Telephony 页。",
+  "engine": "chirp3",
+  "audio": "phone_cmn.wav",
+  "expected": "您好，这里是客户服务中心。您的订单号是 A 三 K 九 二 八。请按一转人工。",
+  "config": {
+    "model": "chirp_3",
+    "language": "cmn-Hans-CN",
+    "punctuation": true,
+    "adaptation": "A3K928"
+  }
+}

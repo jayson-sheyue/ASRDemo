@@ -1,0 +1,14 @@
+{
+  "id": "english",
+  "title": "多语言 · English",
+  "group": "多语言",
+  "note": "Chirp 3 换 locale，不是换「引擎」。",
+  "engine": "chirp3",
+  "audio": "welcome_en.wav",
+  "expected": "Hello, welcome to the listening lab. Cloud Speech to Text turns your voice into readable text.",
+  "config": {
+    "model": "chirp_3",
+    "language": "en-US",
+    "punctuation": true
+  }
+}

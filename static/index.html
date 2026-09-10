@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>听写实验室 · Cloud Speech-to-Text</title><meta name="description" content="按模型分页学习 Chirp 3、Chirp 2、telephony、医学模型与 Speech-to-Text V1。"><link rel="stylesheet" href="/static/style.css"><script src="/static/app.js" defer></script></head>
+<body>
+<header>
+<a class="brand" href="/"><span class="brand-icon">◐</span> 听写实验室 <span class="brand-sub">分页对照</span></a>
+<nav aria-label="模型与文档">
+<button class="nav active" data-page="chirp3">Chirp 3</button>
+<button class="nav" data-page="chirp2">Chirp 2</button>
+<button class="nav" data-page="telephony">Telephony</button>
+<button class="nav" data-page="medical">Medical</button>
+<button class="nav" data-page="v1">V1 对照</button>
+<button class="nav" data-page="learn">入门指南</button>
+<button class="nav" data-page="sources">官方资料 ↗</button>
+</nav>
+<span class="local">● 本地运行 · Python SDK</span>
+</header>
+<main>
+<div id="workspaces"></div>
+<section id="learn" hidden>
+<div class="page-title"><div class="eyebrow">LEARN BY TRANSCRIBING</div><h1>先搞懂它是什么，再点按钮。</h1><p>这是一台云端速记员：你给声音，它交回文字。顶栏每一页是不同专长的速记员，控件和样例不能混着用。下面用大白话解释三种交货方式、新旧柜台，以及医学模型为什么只有美国英语。</p></div>
+<div class="learn-grid">
+<article class="card"><h2>它能干嘛</h2><p>把短录音打成一篇稿，或对着麦克风边说边出字。会议纪要、字幕、客服留言、语音输入，都靠这个。</p></article>
+<article class="card"><h2>三种交货方式</h2><p>「转写」= 整段交上去等全文（大约一分钟内）。「实时听写」= 边说边出字幕。更长的录音要过夜批量，工作台不做。</p></article>
+<article class="card"><h2>先做这三件事</h2><p>① Chirp 3 转写「第一段中文」<br>② 再开「专有名词」看提示短语<br>③ 打开 Medical 页，确认语言只有 en-US</p></article>
+</div>
+<article class="card compare-card"><h2>官方原生支持哪些能力？</h2><p class="hint">核查日期 2026-09-10。不能克隆声纹、不能离线、医学模型不能听中文。</p><div id="model-rules"></div></article>
+<article class="card compare-card"><h2>五个工作台怎么选？</h2><p class="hint">Chirp 3 是默认。其余页是对照和专用场景。医学页只听美国英语。</p><div id="compare-models"></div></article>
+<article class="card compare-card"><h2>同步转写 / 实时听写 / 批量转写</h2><p class="hint">这不是三种模型，是三种把声音送上云的方式。官方接口名分别叫 Recognize、StreamingRecognize、BatchRecognize。</p><div id="compare-methods"></div></article>
+<article class="card compare-card"><h2>新柜台 V2 和旧柜台 V1</h2><p class="hint">同一家服务的两代填表方式。新项目走 V2 + Chirp 3。医学模型目前仍在 V1，且只支持 en-US。</p><div id="compare-api"></div></article>
+<article class="card compare-card"><h2>什么时候不选 Chirp 3？</h2><p class="hint">电话、英语病历、已经上线的旧系统、超过一分钟还在云存储里的录音，各走各的路。</p><div id="compare-why"></div></article>
+<article class="card compare-card"><h2>业务怎么选型？</h2><p class="hint">先对场景，再进对应页听样例。定价以官方价目为准。中文病历不要进 Medical 页。</p><div id="compare-fit"></div></article>
+<article class="card compare-card"><h2>每个开关的业务价值</h2><p class="hint">多开一个开关不等于更准。分轨样例用 2 轨或 4 轨，API 上限是 8 轨，不是只能双声道。</p><div id="feature-value"></div></article>
+<article class="card compare-card"><h2>STT API 还有、本 Demo 不调用的能力</h2><p class="hint">列出是为了选型和接入时不漏项。</p><div id="api-out-of-demo"></div></article>
+<div class="button-row"><button class="secondary" id="show-guide">学习指南</button><button class="secondary" id="show-readme">安装与排错 README</button></div>
+<article class="card document" id="guide-content">正在读取学习指南…</article>
+</section>
+<section id="sources" hidden>
+<div class="page-title"><div class="eyebrow">OFFICIAL REFERENCES · 2026.09.10</div><h1>有出处，才有底气。</h1><p>按用途整理官方入口。文档会更新，请以对应服务与模型页为准。</p></div>
+<div id="source-links" class="source-list"></div>
+<article class="card document" id="source-content"></article>
+</section>
+</main>
+<footer><span>◐ 听写实验室</span><span>学习用 Demo · 非 Google 官方产品 · 每个模型单独一页</span></footer>
+</body>
+</html>

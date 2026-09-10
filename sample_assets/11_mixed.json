@@ -1,0 +1,15 @@
+{
+  "id": "mixed",
+  "title": "功能 · 中英夹杂",
+  "group": "功能怎么测",
+  "note": "这是普通话 locale 里夹英文术语，不是多语切换。中日英德串联请看「多语切换」样例。提示能帮一点英文术语。",
+  "engine": "chirp3",
+  "audio": "mixed_cmn.wav",
+  "expected": "今天我们要用 Cloud Speech-to-Text 的 Chirp 3 模型，language code 选 cmn-Hans-CN。",
+  "config": {
+    "model": "chirp_3",
+    "language": "cmn-Hans-CN",
+    "punctuation": true,
+    "adaptation": "Cloud Speech-to-Text, Chirp 3, cmn-Hans-CN"
+  }
+}

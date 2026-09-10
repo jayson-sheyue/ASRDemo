@@ -1,0 +1,14 @@
+{
+  "id": "taiwan",
+  "title": "多语言 · 台湾普通话 Preview",
+  "group": "多语言",
+  "note": "cmn-Hant-TW 是 Preview。",
+  "engine": "chirp3",
+  "audio": "welcome_tw.wav",
+  "expected": "你好，歡迎來到聽寫實驗室。",
+  "config": {
+    "model": "chirp_3",
+    "language": "cmn-Hant-TW",
+    "punctuation": true
+  }
+}

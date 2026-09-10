@@ -1,0 +1,14 @@
+{
+  "id": "v1-short",
+  "title": "独有 · 短指令",
+  "group": "V1 还在的原因",
+  "note": "latest_short 针对几秒口令。",
+  "engine": "v1",
+  "audio": "command_en.wav",
+  "expected": "Set a timer for five minutes.",
+  "config": {
+    "model": "latest_short",
+    "language": "en-US",
+    "punctuation": true
+  }
+}

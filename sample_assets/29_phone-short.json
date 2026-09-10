@@ -1,0 +1,14 @@
+{
+  "id": "phone-short",
+  "title": "电话 · 短口令 telephony_short",
+  "group": "为什么选电话模型",
+  "note": "官方：telephony_short 针对很短甚至单个词的电话语音。对照「英语 IVR」那条更长的录音（用的是 telephony）。语言是 en-US，因为电话模型官方表没有普通话，也没有 auto。",
+  "engine": "telephony",
+  "audio": "phone_short_en.wav",
+  "expected": "Press one.",
+  "config": {
+    "model": "telephony_short",
+    "language": "en-US",
+    "punctuation": true
+  }
+}

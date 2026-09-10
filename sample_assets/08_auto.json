@@ -1,0 +1,14 @@
+{
+  "id": "auto",
+  "title": "功能 · 自动检测语言",
+  "group": "功能怎么测",
+  "note": "language_codes=auto。样例是英语，不要先入为主填中文。",
+  "engine": "chirp3",
+  "audio": "welcome_en.wav",
+  "expected": "Hello, welcome to the listening lab. Cloud Speech to Text turns your voice into readable text.",
+  "config": {
+    "model": "chirp_3",
+    "language": "auto",
+    "punctuation": true
+  }
+}

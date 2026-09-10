@@ -1,0 +1,15 @@
+{
+  "id": "chirp3-quad",
+  "title": "对照 · 四声道样例（上限 8 轨）",
+  "group": "功能怎么测",
+  "note": "Chirp 3 也能 4 轨，不是电话页专属。V2 WAV/FLAC/OGG 上限 8 轨。按 4 倍时长计费。功能表没把多声道当卖点；混音会议请用说话人分离。",
+  "engine": "chirp3",
+  "audio": "quad_en.wav",
+  "expected": "通道 1：Welcome to the quarterly review.\n通道 2：Revenue is up twelve percent.\n通道 3：I have a question about the timeline.\n通道 4：Let us take that offline after the call.",
+  "config": {
+    "model": "chirp_3",
+    "language": "en-US",
+    "punctuation": true,
+    "channels": true
+  }
+}

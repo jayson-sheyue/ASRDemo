@@ -1,0 +1,15 @@
+{
+  "id": "phone-quad",
+  "title": "电话 · 四声道样例（上限 8 轨）",
+  "group": "为什么选电话模型",
+  "note": "证明分轨不是只能双声道。官方 WAV/LINEAR16/FLAC/OGG 是 1–8 轨。这条 4 轨 8 kHz。按 4 倍时长计费。语言 en-US。",
+  "engine": "telephony",
+  "audio": "phone_quad_en.wav",
+  "expected": "通道 1：Welcome to the quarterly review.\n通道 2：Revenue is up twelve percent.\n通道 3：I have a question about the timeline.\n通道 4：Let us take that offline after the call.",
+  "config": {
+    "model": "telephony",
+    "language": "en-US",
+    "punctuation": true,
+    "channels": true
+  }
+}

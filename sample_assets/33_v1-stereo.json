@@ -1,0 +1,15 @@
+{
+  "id": "v1-stereo",
+  "title": "功能 · 双声道样例（一对一）",
+  "group": "功能怎么测",
+  "note": "V1：audio_channel_count + enable_separate_recognition_per_channel。样例 2 轨；官方 WAV/FLAC/OGG 最多 8 轨。latest_short 不能开。语言 en-US。",
+  "engine": "v1",
+  "audio": "stereo_en.wav",
+  "expected": "通道 1：Thanks for calling. How can I help you today?\n通道 2：I need to check my order A three K nine.",
+  "config": {
+    "model": "latest_long",
+    "language": "en-US",
+    "punctuation": true,
+    "channels": true
+  }
+}

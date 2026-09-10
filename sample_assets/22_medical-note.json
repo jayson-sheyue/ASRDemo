@@ -1,0 +1,15 @@
+{
+  "id": "medical-note",
+  "title": "医学 · 口授",
+  "group": "专用模型",
+  "note": "英语病历口授。医学模型官方只支持 en-US，不是中文。hypertension / metformin 是专用模型存在的理由。未开通会 403/404。",
+  "engine": "medical",
+  "audio": "medical_dictation.wav",
+  "expected": "Patient presents with hypertension and type two diabetes. Start metformin five hundred milligrams twice daily.",
+  "config": {
+    "model": "medical_dictation",
+    "language": "en-US",
+    "punctuation": true,
+    "word_time": true
+  }
+}

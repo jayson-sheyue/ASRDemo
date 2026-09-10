@@ -1,0 +1,16 @@
+{
+  "id": "diarization",
+  "title": "功能 · 说话人分离",
+  "group": "功能怎么测",
+  "note": "两段英语拼接。官方功能表写分离主路径是 Batch；同步 Recognize 可能成功或 400。",
+  "engine": "chirp3",
+  "audio": "dialogue_en.wav",
+  "expected": "Speech to Text turns audio into text. Yes, and Chirp 3 can also label different speakers in one recording.",
+  "config": {
+    "model": "chirp_3",
+    "language": "en-US",
+    "punctuation": true,
+    "diarization": true,
+    "word_time": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "timestamps",
+  "title": "功能 · 词级时间戳",
+  "group": "功能怎么测",
+  "note": "打开 word time offsets。流式页没有这项官方保证。",
+  "engine": "chirp3",
+  "audio": "news_cmn.wav",
+  "expected": "请把这份通知听写清楚：会议改到周五上午九点，不要迟到。",
+  "config": {
+    "model": "chirp_3",
+    "language": "cmn-Hans-CN",
+    "punctuation": true,
+    "word_time": true
+  }
+}

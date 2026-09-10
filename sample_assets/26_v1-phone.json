@@ -1,0 +1,14 @@
+{
+  "id": "v1-phone",
+  "title": "对照 · 旧 phone_call",
+  "group": "V1 还在的原因",
+  "note": "旧电话模型。新电话请用 V2 telephony 页。",
+  "engine": "v1",
+  "audio": "phone_en.wav",
+  "expected": "Thanks for calling. Your confirmation code is A three K nine. Press one for an agent.",
+  "config": {
+    "model": "phone_call",
+    "language": "en-US",
+    "punctuation": true
+  }
+}

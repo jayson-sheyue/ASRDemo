@@ -1,0 +1,15 @@
+{
+  "id": "v1-alt",
+  "title": "功能 · 多候选",
+  "group": "功能怎么测",
+  "note": "max_alternatives=3。候选不一定更对，只是对照用。",
+  "engine": "v1",
+  "audio": "welcome_en.wav",
+  "expected": "Hello, welcome to the listening lab. Cloud Speech to Text turns your voice into readable text.",
+  "config": {
+    "model": "latest_long",
+    "language": "en-US",
+    "punctuation": true,
+    "max_alternatives": 3
+  }
+}

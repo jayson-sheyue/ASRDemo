@@ -1,0 +1,16 @@
+{
+  "id": "v1-adapt",
+  "title": "功能 · speechContexts",
+  "group": "功能怎么测",
+  "note": "V1 用 speechContexts.boost，不是 V2 PhraseSet。",
+  "engine": "v1",
+  "audio": "numbers_en.wav",
+  "expected": "Please ship to 1600 Amphitheatre Parkway, Mountain View, and call 650-555-0100.",
+  "config": {
+    "model": "latest_long",
+    "language": "en-US",
+    "punctuation": true,
+    "word_time": true,
+    "adaptation": "1600 Amphitheatre Parkway, Mountain View, 650-555-0100"
+  }
+}

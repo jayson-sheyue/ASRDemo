@@ -1,0 +1,15 @@
+{
+  "id": "chirp2-time",
+  "title": "功能 · 词级时间戳",
+  "group": "功能怎么测",
+  "note": "Chirp 2 文档把词级时间戳列为能力。",
+  "engine": "chirp2",
+  "audio": "welcome_en.wav",
+  "expected": "Hello, welcome to the listening lab. Cloud Speech to Text turns your voice into readable text.",
+  "config": {
+    "model": "chirp_2",
+    "language": "en-US",
+    "punctuation": true,
+    "word_time": true
+  }
+}

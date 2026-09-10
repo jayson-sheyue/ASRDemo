@@ -1,0 +1,14 @@
+{
+  "id": "welcome",
+  "title": "入门 · 第一段中文",
+  "group": "入门对照",
+  "note": "先转写这一条。下一步只换语言或只开一个功能。",
+  "engine": "chirp3",
+  "audio": "welcome_cmn.wav",
+  "expected": "你好，欢迎来到听写实验室。把声音交给 Google Cloud，让它变成可以阅读的文字。",
+  "config": {
+    "model": "chirp_3",
+    "language": "cmn-Hans-CN",
+    "punctuation": true
+  }
+}

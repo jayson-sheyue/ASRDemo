@@ -1,0 +1,14 @@
+{
+  "id": "v1-long",
+  "title": "对照 · default 中文",
+  "group": "V1 还在的原因",
+  "note": "V1 latest_long / latest_short 官方语言表没有普通话。中文请用 default 或 command_and_search。新项目仍应先试 Chirp 3。",
+  "engine": "v1",
+  "audio": "lecture_cmn.wav",
+  "expected": "语音识别不是把声音变成人，它只是把已经说出来的话写成字。模型会猜，专有名词要靠短语提示。",
+  "config": {
+    "model": "default",
+    "language": "cmn-Hans-CN",
+    "punctuation": true
+  }
+}

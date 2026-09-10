@@ -1,0 +1,14 @@
+{
+  "id": "polyglot-auto",
+  "title": "功能 · 多语切换 · auto",
+  "group": "功能怎么测",
+  "note": "同一段中→日→英→德串联。auto 官方转最主要的语言，不是保证四段都按原文脚本。请对照下一条「列预期 locale」。",
+  "engine": "chirp3",
+  "audio": "polyglot_cmn_ja_en_de.wav",
+  "expected": "大家好，欢迎参加今天的产品发布会。本日はお越しいただきありがとうございます。Hello everyone, thank you for joining this product launch. Guten Tag, willkommen zur Produkteinführung.",
+  "config": {
+    "model": "chirp_3",
+    "language": "auto",
+    "punctuation": true
+  }
+}

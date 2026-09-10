@@ -1,0 +1,14 @@
+{
+  "id": "japanese",
+  "title": "多语言 · 日本語",
+  "group": "多语言",
+  "note": "ja-JP。听写实验室四个字不会出现在日文里。",
+  "engine": "chirp3",
+  "audio": "welcome_ja.wav",
+  "expected": "こんにちは。音声認識ラボへようこそ。今日は、声を文字に変えてみましょう。",
+  "config": {
+    "model": "chirp_3",
+    "language": "ja-JP",
+    "punctuation": true
+  }
+}

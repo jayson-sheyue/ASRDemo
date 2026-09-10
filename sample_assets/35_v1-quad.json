@@ -1,0 +1,15 @@
+{
+  "id": "v1-quad",
+  "title": "功能 · 四声道样例（上限 8 轨）",
+  "group": "功能怎么测",
+  "note": "同一套 V1 分轨字段，4 条独立声道。3 轨、5 轨也可以，上限 8。按轨计费。latest_short 不能开。",
+  "engine": "v1",
+  "audio": "quad_en.wav",
+  "expected": "通道 1：Welcome to the quarterly review.\n通道 2：Revenue is up twelve percent.\n通道 3：I have a question about the timeline.\n通道 4：Let us take that offline after the call.",
+  "config": {
+    "model": "latest_long",
+    "language": "en-US",
+    "punctuation": true,
+    "channels": true
+  }
+}

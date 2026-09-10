@@ -1,0 +1,15 @@
+{
+  "id": "phone-en",
+  "title": "电话 · 英语 IVR",
+  "group": "为什么选电话模型",
+  "note": "验证码按字母读。telephony 为电话通道训练。",
+  "engine": "telephony",
+  "audio": "phone_en.wav",
+  "expected": "Thanks for calling. Your confirmation code is A three K nine. Press one for an agent.",
+  "config": {
+    "model": "telephony",
+    "language": "en-US",
+    "punctuation": true,
+    "adaptation": "A3K9"
+  }
+}

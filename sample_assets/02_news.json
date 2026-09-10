@@ -1,0 +1,14 @@
+{
+  "id": "news",
+  "title": "入门 · 通知",
+  "group": "入门对照",
+  "note": "同一把普通话，换一句更清楚的口播。",
+  "engine": "chirp3",
+  "audio": "news_cmn.wav",
+  "expected": "请把这份通知听写清楚：会议改到周五上午九点，不要迟到。",
+  "config": {
+    "model": "chirp_3",
+    "language": "cmn-Hans-CN",
+    "punctuation": true
+  }
+}

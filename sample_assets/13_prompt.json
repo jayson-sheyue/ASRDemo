@@ -1,0 +1,15 @@
+{
+  "id": "prompt",
+  "title": "功能 · 格式提示 Preview",
+  "group": "功能怎么测",
+  "note": "custom prompt 是 Preview。这里请模型把数字写成阿拉伯数字。",
+  "engine": "chirp3",
+  "audio": "news_cmn.wav",
+  "expected": "请把这份通知听写清楚：会议改到周五上午九点，不要迟到。",
+  "config": {
+    "model": "chirp_3",
+    "language": "cmn-Hans-CN",
+    "punctuation": true,
+    "custom_prompt": "Write numbers with Arabic digits. Keep punctuation."
+  }
+}

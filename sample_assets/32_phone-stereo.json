@@ -1,0 +1,15 @@
+{
+  "id": "phone-stereo",
+  "title": "电话 · 双声道样例（一对一）",
+  "group": "为什么选电话模型",
+  "note": "样例是 2 轨：左坐席、右客户。API 对 WAV/FLAC/OGG 最多 8 轨，3、4 轨同样可以，见「四声道样例」。MULAW/AMR 只能 1 轨。按轨计费。语言 en-US。",
+  "engine": "telephony",
+  "audio": "phone_stereo_en.wav",
+  "expected": "通道 1：Thanks for calling. How can I help you today?\n通道 2：I need to check my order A three K nine.",
+  "config": {
+    "model": "telephony",
+    "language": "en-US",
+    "punctuation": true,
+    "channels": true
+  }
+}

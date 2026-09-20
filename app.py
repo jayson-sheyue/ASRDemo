@@ -46,6 +46,29 @@ def bind_host_port(default_port: str = '8002') -> tuple[str, int]:
     return '127.0.0.1', int(os.getenv('DEMO_PORT') or default_port)
 
 
+def same_origin(origin: str, request: WebRequest) -> bool:
+    """Allow same-page POSTs. Cloud Run may rewrite scheme/host vs browser Origin."""
+    from urllib.parse import urlparse
+    parsed = urlparse(origin)
+    if not parsed.netloc:
+        return False
+    candidates = {
+        request.headers.get('x-forwarded-host', '').split(',')[0].strip(),
+        request.headers.get('host', '').strip(),
+        request.url.hostname or '',
+        urlparse(str(request.base_url)).netloc,
+    }
+    if parsed.netloc in {item for item in candidates if item}:
+        return True
+    # Cloud Run serves two hostnames per service; Origin/Host can disagree.
+    if os.getenv('K_SERVICE'):
+        origin_host = (parsed.hostname or '').lower()
+        req_host = (request.headers.get('host') or '').split(':')[0].lower()
+        if origin_host.endswith('.run.app') and req_host.endswith('.run.app'):
+            return True
+    return False
+
+
 app = FastAPI(title='听写实验室', description='Cloud Speech-to-Text · 本地教学 Demo')
 app.add_middleware(TrustedHostMiddleware, allowed_hosts=allowed_hosts())
 app.mount('/static', StaticFiles(directory=ROOT / 'static'), name='static')
@@ -57,7 +80,7 @@ MAX_BODY = 10_000_000
 async def local_only(request: WebRequest, call_next):
     if request.method == 'POST':
         origin = request.headers.get('origin')
-        if origin and origin != str(request.base_url).rstrip('/'):
+        if origin and not same_origin(origin, request):
             return JSONResponse({'detail': '请从本 Demo 页面发起请求。'}, status_code=403)
         if request.headers.get('content-type', '').split(';')[0] != 'application/json':
             return JSONResponse({'detail': '需要 JSON 请求。'}, status_code=415)
